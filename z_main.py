@@ -1,5 +1,11 @@
 import scanning_face as sf
 import matching_face as mf
+import os
+
+directory = "known_faces"
+
+if not os.path.exists(directory):
+    os.makedirs(directory)
 
 user_status = int(input("Are you a new user (1) or an existing user (2): "))
 
